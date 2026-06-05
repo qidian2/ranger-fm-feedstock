@@ -1,5 +1,5 @@
 {% set name = "ranger-fm" %}
-{% set version = "1.9.3" %}
+{% set version = "1.9.4" %}
 
 
 package:
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9476ed1971c641f4ba3dde1b8b80387f0216fcde3507426d06871f9d7189ac5e
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ranger_fm-{{ version }}.tar.gz
+  sha256: bee308b636137b9135111fc795a57cdbb95257f2670101042ac3d7747dec32c8
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
